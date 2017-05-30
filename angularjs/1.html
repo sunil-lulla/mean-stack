@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="">
+<head>
+	<title>Angular JS | ng-repeat</title>
+	<script src="https://code.angularjs.org/snapshot/angular.min.js"></script>
+</head>
+<body ng-init="myLang=[{name:'Python',extension:'.php'},{name:'Javascript',extension:'.js'},{name:'C++',extension:'.cpp'}]">
+
+<p ng-repeat="lang in myLang">
+	Name: {{ lang.name }} <br />
+	Name: {{ lang.extension }} <br />
+</p>
+
+</body>
+</html>
