@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="langApp">
+<head>
+	<title>Angular JS | ng-repeat</title>
+	<script src="https://code.angularjs.org/snapshot/angular.min.js"></script>
+</head>
+<body ng-controller="languages">
+Select Your fav language: 
+<button ng-click="php()">PHP</button>
+<button ng-click="python()">Python</button>
+<button ng-click="java()">Java</button>
+<button ng-click="ruby()">Ruby</button>
+<p>
+	You have selected: {{ myFavLanguage }}
+</p>
+<script>
+	var application = angular.module("langApp",[]);
+	application.controller("languages",['$scope',function ($scope) {
+		$scope.myFavLanguage = 'None';
+		$scope.php = function (argument) {
+			$scope.myFavLanguage = 'php';
+		}
+
+		$scope.python = function (argument) {
+			$scope.myFavLanguage = 'python';
+		}
+
+		$scope.java = function (argument) {
+			$scope.myFavLanguage = 'java';
+		}
+
+		$scope.ruby = function (argument) {
+			$scope.myFavLanguage = 'ruby';
+		}
+
+	}]);
+</script>
+</body>
+</html>
