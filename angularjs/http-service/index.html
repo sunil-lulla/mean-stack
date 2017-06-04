@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angular JS | Routing</title>
+	<script src="https://code.angularjs.org/snapshot/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.min.js"></script>
+	<script src="controller.js"></script>
+</head>
+<body ng-app="PersonsApp">
+<div ng-controller="PersonController">
+	<ul>
+		<li ng-repeat="person in persons">
+			{{ person.name +" : "+ person.age}}
+		</li>
+	</ul>
+</div>
+</body>
+</html>
