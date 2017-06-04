@@ -7,12 +7,18 @@
 	<script src="controller.js"></script>
 </head>
 <body ng-app="PersonsApp">
+
 <div ng-controller="PersonController">
-	<ul>
-		<li ng-repeat="person in persons">
-			{{ person.name +" : "+ person.age}}
+	<ul>.
+		<li ng-repeat="person in persons | filter:globalSearch">
+			{{ person.name +" : "+ person.age+" : "+person.color}}
 		</li>
 	</ul>
 </div>
+Global Search: <input type="search" ng-model="globalSearch.$"> <br />
+Name: <input type="search" ng-model="globalSearch.name"> <br />
+Age: <input type="search" ng-model="globalSearch.age"> <br />
+Color: <input type="search" ng-model="globalSearch.color"> <br />
+
 </body>
 </html>
