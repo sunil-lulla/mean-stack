@@ -25,6 +25,6 @@ app.controller("LoopController",["$scope",function ($scope) {
 	// myRange = [];
 	// for(i=0;i<range;i++)
 	// 	myRange.push(i);
-	$scope.myRange = new Array(100);
+	$scope.myRange = new Array(100000);
 }])
 
