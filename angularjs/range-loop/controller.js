@@ -21,10 +21,10 @@ var app = angular.module("LoopApp",[]);
 // }]);
 
 app.controller("LoopController",["$scope",function ($scope) {	
-	range = 100;
-	myRange = [];
-	for(i=0;i<range;i++)
-		myRange.push(i);
-	$scope.myRange = myRange;
+	// range = 100;
+	// myRange = [];
+	// for(i=0;i<range;i++)
+	// 	myRange.push(i);
+	$scope.myRange = new Array(100);
 }])
 
