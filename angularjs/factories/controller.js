@@ -12,5 +12,4 @@ application.controller("ServicesController",function ($scope,random) {
 	$scope.getRandom = function () {
 		$scope.number = random.generate();	
 	}
-
 })
