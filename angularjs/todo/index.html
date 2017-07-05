@@ -11,8 +11,14 @@
 		span.done-true {
 			font-style: italic;
 			text-decoration: line-through;
-			color: grey;
+			color: gray;
 		}
+		input[contenteditable="true"] {
+			background-color: gray;
+			padding: 4px;
+
+		}
+
 	</style>
 </head>
 <body>
@@ -24,12 +30,9 @@
 		<div id="tasksToshow">
 			<ul>
 				<li ng-repeat="t in tasks">
-
-					<span class="done-{{ t.status }}">
 					<input type="checkbox" ng-model="t.status">
-					{{
-					 	t.task
-					}}
+					<span class="done-{{ t.status }}" ng-model="t.task"  contenteditable="false" ng-dblclick="editTask()">
+					{{t.task}}
 					</span>
 				</li>
 					

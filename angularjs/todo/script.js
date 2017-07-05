@@ -11,4 +11,9 @@ app.controller("todoController",function ($scope) {
 		$scope.tasks.push({"task":$scope.task,"status":false});
 		$scope.task = '';
 	}
+	$scope.editTask = function(){
+		console.log("hey ther");
+		event.target.contentEditable = event.target.contentEditable == "true"? "false":"true";
+	}
+
 })
