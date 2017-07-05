@@ -10,9 +10,9 @@
 <body>
 	<div ng-app="todoApp" ng-controller="todoController">
 		<h1 style="text-align: center;">
-			Todo App
+			Add a Task
 		</h1>
-		<input ng-keyup="onSave()" type="text" style="display: block;margin: 0px auto; padding: 15px;font-size: 15px;width: 300px;">
+		<input ng-model="task" ng-keyup="onSave()" type="text" style="display: block;margin: 0px auto; padding: 15px;font-size: 15px;width: 300px;">
 
 	</div>
 </body>
