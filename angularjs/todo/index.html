@@ -8,7 +8,7 @@
 		<script src="script.js"></script>
 
 	<style type="text/css">
-		span.complete {
+		span.done-true {
 			font-style: italic;
 			text-decoration: line-through;
 			color: grey;
@@ -24,7 +24,9 @@
 		<div id="tasksToshow">
 			<ul>
 				<li ng-repeat="t in tasks">
-					<span class="{{ t.status }}">
+
+					<span class="done-{{ t.status }}">
+					<input type="checkbox" ng-model="t.status">
 					{{
 					 	t.task
 					}}

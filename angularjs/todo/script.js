@@ -8,7 +8,7 @@ app.controller("todoController",function ($scope) {
 		}
 	}
 	$scope.addTask = function(){
-		$scope.tasks.push({"task":$scope.task,"status":"incomplete"});
+		$scope.tasks.push({"task":$scope.task,"status":false});
 		$scope.task = '';
 	}
 })
