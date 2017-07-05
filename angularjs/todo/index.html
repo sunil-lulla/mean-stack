@@ -13,7 +13,17 @@
 			Add a Task
 		</h1>
 		<input ng-model="task" ng-keyup="onSave()" type="text" style="display: block;margin: 0px auto; padding: 15px;font-size: 15px;width: 300px;">
-
+		<div id="tasksToshow">
+			<ul>
+				<li ng-repeat="t in tasks">
+					{{
+					 	t
+					}}
+					
+				</li>
+					
+			</ul>
+		</div>
 	</div>
 </body>
 </html>

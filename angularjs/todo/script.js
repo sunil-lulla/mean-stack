@@ -10,6 +10,5 @@ app.controller("todoController",function ($scope) {
 	$scope.addTask = function(){
 		$scope.tasks.push($scope.task);
 		$scope.task = '';
-		console.log($scope.tasks); 
 	}
 })
