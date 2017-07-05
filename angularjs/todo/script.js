@@ -2,6 +2,11 @@ var app = angular.module("todoApp",[]);
 
 app.controller("todoController",function ($scope) {
 	$scope.onSave = function(){
-		console.log(event.which);
+		if (event.which == 13){
+			$scope.addTask();
+		}
+	}
+	$scope.addTask = function(){
+		alert("hey There");
 	}
 })
