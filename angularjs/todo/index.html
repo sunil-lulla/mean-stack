@@ -31,7 +31,7 @@
 			<ul>
 				<li ng-repeat="t in tasks track by $index">
 					<input type="checkbox" ng-model="t.status">
-					<span class="done-{{ t.status }}" ng-model="t.task"  contenteditable="false" ng-dblclick="editTask()" ng-keydown="enterAgain(t.task)">
+					<span class="done-{{ t.status }}" ng-model="t.task"  contenteditable="false" ng-dblclick="editTask(t.task)" ng-keydown="enterAgain(t.task)">
 					{{t.task}}
 					</span>
 				</li>
