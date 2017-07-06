@@ -15,9 +15,10 @@ app.controller("todoController",function ($scope) {
 		event.target.contentEditable = event.target.contentEditable == "true"? "false":"true";
 	}
 	$scope.enterAgain = function(taskMsg){
-		console.log("suni");
+		console.log("enter");
+		console.log(taskMsg);
 		if ((event.which == 13 || event.keyCode == 13) && taskMsg != ""){
-			editTask();
+			$scope.editTask();
 		}
 		
 	}
