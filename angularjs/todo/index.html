@@ -29,7 +29,7 @@
 		<input ng-model="task" ng-keyup="onSave()" type="text" style="display: block;margin: 0px auto; padding: 15px;font-size: 15px;width: 300px;">
 		<div id="tasksToshow">
 			<ul>
-				<li ng-repeat="t in tasks">
+				<li ng-repeat="t in tasks track by $index">
 					<input type="checkbox" ng-model="t.status">
 					<span class="done-{{ t.status }}" ng-model="t.task"  contenteditable="false" ng-dblclick="editTask()" ng-keydown="enterAgain(t.task)">
 					{{t.task}}
