@@ -1,3 +1,4 @@
-require('./count');
+count  = require('./count');
 
-console.log(counter([1,4]));
+console.log(count.pi);
+console.log(counter([1,2,3]));
