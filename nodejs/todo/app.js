@@ -12,5 +12,5 @@ app.use(express.static('./public'));
 todoController(app);
 
 // listen to port
-app.listen(6800);
+app.listen(1995);
 console.log("listening on 3000 ");
